@@ -33,6 +33,7 @@ export default {
     TestimonialsVue,
     ContactVue,
     FooterVue,
+
 }
 }
 

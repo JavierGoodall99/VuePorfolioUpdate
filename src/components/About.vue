@@ -21,7 +21,7 @@
 
 <script>
 export default {
-    
+    name : 'ABOUT'
 }
 </script>
 <style scoped>
