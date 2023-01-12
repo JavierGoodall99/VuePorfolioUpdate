@@ -1,7 +1,7 @@
 
 <template>
   <section id="testimonials">
-    <h3 class="fw-bold display-3 text-black mt-5 mb-3 text-decoration-underline">Testimonials</h3>
+    <!-- <h3 class="fw-bold display-3 text-black mt-5 mb-3 text-decoration-underline">Testimonials</h3> -->
     <div class="container-fluid" id="carousel">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
