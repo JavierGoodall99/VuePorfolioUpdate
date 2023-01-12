@@ -7,7 +7,7 @@
         <a class="footer-link" target="_blank" href="https://www.instagram.com/javiergoodall/"><i class="fa-brands fa-instagram"></i>Instagram</a>
       </div>
       <div class="text-center text-black p-3 fs-6">
-        <p>© Copyright 2022. Made by Javier Goodall</p>
+        <p>© Copyright 2023. Made by Javier Goodall</p>
       </div>
     </footer>
 </template>

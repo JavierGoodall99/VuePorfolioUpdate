@@ -21,9 +21,18 @@
 
 <script>
 export default {
-    name : 'ABOUT'
 }
 </script>
 <style scoped>
-    
+
+@media screen  and (max-width:1080px) {
+        p {
+        font-size: small;
+        text-align: center;
+    }
+    .paragraph {
+        margin-right: 30px;
+        margin-left: 50px;
+    }
+  }
 </style>

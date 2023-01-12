@@ -1,11 +1,11 @@
 <template lang="">
 <!-- Resume -->
 <div id="resume" class="container-fluid text-black">
-  <h3 class="fw-bold display-3 text-black mt-5 mb-3 text-decoration-underline">Resume</h3>
+  <h2 class="fw-bold display-3 text-black mt-5 mb-3 text-decoration-underline">Resume</h2>
   <h3 class="fw-bold">Education</h3>
   <ul class="resume lh-lg me-4">
     <li v-for="degree in education" :key="degree.id">
-      {{ degree.startDate }} - {{ degree.endDate }}
+      <p>{{ degree.startDate }} - {{ degree.endDate }}</p>
       <p>{{ degree.degree }} - {{ degree.institution }}</p>
       <p>{{ degree.description }}</p>
     </li>
@@ -17,7 +17,7 @@
   <h3 class="fw-bold">Experience</h3>
   <ul class="lh-lg me-4">
     <li v-for="job in experience" :key="job.id">
-      {{ job.startDate }} - {{ job.endDate }}
+      <p>{{ job.startDate }} - {{ job.endDate }}</p>
       <p>{{ job.title }} - {{ job.company }}</p>
     </li>
   </ul>
@@ -129,4 +129,16 @@ ul {
     margin: auto;
     height: 30px;
 }
+
+
+@media screen  and (max-width:1080px) {
+  h3 {
+    font-size: medium;
+  }
+  p {
+        font-size: small;
+        text-align: center;
+    }
+}
+
 </style>

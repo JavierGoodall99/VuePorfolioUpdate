@@ -5,12 +5,12 @@
     </div>
     <div class="row px-5">
       <div class="col-md-4" v-for="project in projects" :key="project.name">
-        <div class="card text-center">
-          <img :src="project.image" :alt="project.name + ' image'">
+        <div class="card text-center w-75 m-auto mb-5">
+          <img :src="project.image" :alt="project">
           <div class="card-body">
-            <h5 class="card-title">{{ project.name }}</h5>
-            <a :href="project.gitHub" target="_blank">GitHub</a>
-            <a :href="project.netlify" target="_blank">Netlify</a>
+            <h5 class="card-title">{{ project.title }}</h5>
+            <a :href="project.gitHub" target="_blank" class="p-1 m-auto">GitHub</a>
+            <a :href="project.netlify" target="_blank" class="p-1 m-auto">Netlify</a>
           </div>
         </div>
       </div>
