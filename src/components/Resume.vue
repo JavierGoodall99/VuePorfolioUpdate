@@ -1,13 +1,16 @@
 <template lang="">
 <!-- Resume -->
 <div id="resume" class="container-fluid text-black">
-  <h2 class="fw-bold display-3 text-black mt-5 mb-3 text-decoration-underline">Resume</h2>
+  <h2 class="fw-bold display-3 text-black mt-5 mb-5 text-decoration-underline">Resume</h2>
   <h3 class="fw-bold">Education</h3>
   <ul class="resume lh-lg me-4">
     <li v-for="degree in education" :key="degree.id">
-      <p>{{ degree.startDate }} - {{ degree.endDate }}</p>
-      <p>{{ degree.degree }} - {{ degree.institution }}</p>
-      <p>{{ degree.description }}</p>
+      <p class="mb-4">{{ degree.startDate }} - {{ degree.endDate }}
+        <br>
+        {{ degree.degree }} - {{ degree.institution }}
+        <br>
+        {{ degree.description }}
+      </p>
     </li>
   </ul>
 </div>
@@ -17,8 +20,10 @@
   <h3 class="fw-bold">Experience</h3>
   <ul class="lh-lg me-4">
     <li v-for="job in experience" :key="job.id">
-      <p>{{ job.startDate }} - {{ job.endDate }}</p>
-      <p>{{ job.title }} - {{ job.company }}</p>
+      <p class="mb-4">{{ job.startDate }} - {{ job.endDate }}
+      <br>
+      {{ job.title }} - {{ job.company }}
+      </p>
     </li>
   </ul>
 </div>
@@ -47,7 +52,7 @@ export default {
         education: [
         {
             id: 1,
-            degree: 'Bachelor Pass',
+            degree: 'Bachelor Pass Certificate',
             institution: 'Plumstead High School',
             startDate: 'January 2013',
             endDate: 'December 2017',

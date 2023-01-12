@@ -1,12 +1,12 @@
 <template>
       <section id="projects" class="container-fluid">
     <div class="container">
-      <h3 class="display-3 text-black mt-5 mb-3 text-decoration-underline">Projects</h3>
+      <h3 class="display-3 text-black mt-5 mb-5 text-decoration-underline">Projects</h3>
     </div>
     <div class="row px-5">
       <div class="col-md-4" v-for="project in projects" :key="project.name">
         <div class="card text-center w-75 m-auto mb-5">
-          <img :src="project.image" :alt="project">
+          <img :src="project.image" :alt="project" loading="lazy">
           <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
             <a :href="project.gitHub" target="_blank" class="p-1 m-auto">GitHub</a>

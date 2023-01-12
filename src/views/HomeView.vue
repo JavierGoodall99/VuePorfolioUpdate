@@ -2,11 +2,11 @@
 <!-- Landing Page -->
 <section>
   <div class="top-container container-fluid">
-    <img class="astronaut img-fluid" src="https://i.postimg.cc/qBmNgHdx/astronaut.png" alt="astronaut">
+    <img class="astronaut img-fluid" src="https://i.postimg.cc/qBmNgHdx/astronaut.png" loading="lazy" alt="astronaut">
     <h1 class="text-black">Hey, I'm Javier Goodall</h1>
     <p class="subheading text-black">Aspiring Full Stack Web Developer</p>
-    <img class="spaceship img-fluid" src="https://i.postimg.cc/0yHgJZy3/startup.png" alt="spaceship">
-    <img class="moon img-fluid" src="https://i.postimg.cc/PJYBwkRr/halfmoon.png" alt="moon">
+    <img class="spaceship img-fluid" src="https://i.postimg.cc/0yHgJZy3/startup.png" loading="lazy" alt="spaceship">
+    <img class="moon img-fluid" src="https://i.postimg.cc/PJYBwkRr/halfmoon.png" loading="lazy" alt="moon">
     <a href="#" class="link-arrow"><img src="https://i.postimg.cc/mkLJ7tnZ/up-arrow.png" loading="lazy"
       alt="scroll button" class="arrow">
     </a>
@@ -15,6 +15,9 @@
 </template>
 <script>
 export default {
+    // The watch property will look for changes on the $route property and perform the actions when it changes.
+  // For this example when the route's hash fragment is #about, it will use the 
+  //  document.getElementById("about")method to find the element with the id "about" and call the scrollIntoView().
     watch: {
   $route() {
     if (this.$route.hash === "#about") {

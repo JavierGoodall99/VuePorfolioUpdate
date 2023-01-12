@@ -25,6 +25,10 @@ export default {
 </script>
 <style scoped>
 
+.profile1 {
+    box-shadow: 0 0 20px 7px black;
+}
+
 @media screen  and (max-width:1080px) {
         p {
         font-size: small;

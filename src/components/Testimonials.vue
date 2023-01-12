@@ -8,7 +8,7 @@
           <div class="carousel-item active" data-bs-interval="10000" v-for="testimonial in testimonialsActiveCarousel"
             :key="testimonial.id">
             <p class="my-5"> {{ testimonial.content }}</p>
-            <img :src="testimonial.image" class="img-fluid w-25 m-auto" alt="testimony" loading="lazy">
+            <img :src="testimonial.image" class="img-fluid m-auto" alt="testimony" loading="lazy">
             <h5 class="mt-3 text-black"> {{ testimonial.name }}</h5>
             <h6 class="text-black">{{ testimonial.position }}</h6>
           </div>
@@ -71,7 +71,7 @@ export default {
                 },
                 {
                   id: 5,
-                  content: "Javier is a very determined and hardworking person. He is great at multi-tasking and can handle the pressure that a busy workplace provides. In this short amount of time he progressed quicky and he is very creative. Always open to help is peers in need. He will be a good asset for companies and I'd recommend him to anyone.",
+                  content: "Javier is a very determined and hardworking person. He is great at multi-tasking and can handle the pressure that a busy workplace provides. In this short amount of time he progressed quickly and he is very creative. Always open to help his peers in need.",
                   image: "https://i.postimg.cc/9FRNDGp0/DSC-3588.jpg",
                   name: "Maxwil Isaacs",
                   position: "Web Developer"
@@ -126,8 +126,18 @@ span {
         max-width: 100%;
     }
     p {
-        font-size: large;
+        font-size: small;
         text-align: center;
+    }
+
+    h5 {
+      font-size: small;
+      text-align: center;
+    }
+
+    h6 {
+      font-size: small;
+      text-align: center;
     }
   }
 
