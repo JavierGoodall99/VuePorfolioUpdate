@@ -31,7 +31,7 @@
 
 <!-- Skills -->
 <div id="skills" class="container-fluid text-black">
-  <h3 class="text-left fw-bold mt-3 mb-4">My Skills</h3>
+  <h3 class="text-left fw-bold mt-3 mb-4">Skills</h3>
   <div class="progressbar m-auto">
     <div v-for="skill in skills" :key="skill.name">
       <h3>{{ skill.name }} <i :class="'fa-brands ' + skill.icon"></i></h3>
