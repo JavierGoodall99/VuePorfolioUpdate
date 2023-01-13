@@ -1,7 +1,7 @@
 <template>
 <section id="about">
   <div class="container-fluid row">
-    <h3 class="display-3 text-black text-md-center mb-5 mt-3">About Me</h3>
+    <h3 class="display-3 text-black text-md-center mb-5 mt-3 text-decoration-underline">About</h3>
     <div class="about col-md-6">
       <img class="profile1 my-3 img-fluid mx-4 w-75 float-md-end" src="https://i.postimg.cc/7ZBQDZDk/Profile
       Me.jpg" alt="Javier Profile">

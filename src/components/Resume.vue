@@ -1,7 +1,7 @@
 <template lang="">
 <!-- Resume -->
 <div id="resume" class="container-fluid text-black">
-  <h2 class="fw-bold display-3 text-black mt-5 mb-5 text-decoration-underline">Resume</h2>
+  <h2 class="display-3 text-black mt-5 mb-5 text-decoration-underline">Resume</h2>
   <h3 class="fw-bold">Education</h3>
   <ul class="resume lh-lg me-4">
     <li v-for="degree in education" :key="degree.id">
