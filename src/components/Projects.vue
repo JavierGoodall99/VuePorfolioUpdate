@@ -34,7 +34,7 @@ export default {
     return {
     projects: [
         {
-          title: 'Portfolio',
+          title: 'Bootstrap Portfolio',
           image: 'https://i.postimg.cc/NjJGvgWh/astronaut.gif',
           gitHub: 'https://github.com/JavierGoodall99/NEWPORTFOLIO.git',
           netlify: 'https://javier-portfolio.netlify.app'
