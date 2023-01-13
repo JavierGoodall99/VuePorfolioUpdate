@@ -12,7 +12,7 @@
         problem-solving skills and a way to communicate with others on a technical level. Furthermore, I enjoy
         designing pages where I can truly provide users with pleasurable interactions and experiences. Life
         Choices Academy has helped to boost my self-esteem and kept me motivated throughout the whole journey.
-        Since I started coding I noticed that I can never be bored because there is always something new to learn
+        Since I started coding I noticed that I can never be bored because there is always something new to learn.
       </p>
     </div>
   </div>
