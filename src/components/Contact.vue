@@ -1,7 +1,7 @@
 <template>
     <section class="container-fluid">
   <h3 id="contact" class="display-3 text-black my-5 text-decoration-underline">Contact</h3>
-  <form action="https://formspree.io/f/xdojzbnr" method="post">
+  <form action="https://formspree.io/f/xyyayrlk" method="post">
     <div class="row my-3 px-5">
       <div class="col-sm-12 col-lg-6 mb-4">
         <input type="text" class="form-control form-control-lg" placeholder="First name"

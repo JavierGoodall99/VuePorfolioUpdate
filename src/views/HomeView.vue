@@ -3,10 +3,10 @@
 <section>
   <div class="top-container container-fluid">
     <img class="astronaut img-fluid" src="https://i.postimg.cc/qBmNgHdx/astronaut.png" loading="lazy" alt="astronaut">
-    <h1 class="text-black">Hey, I'm Javier Goodall</h1>
-    <p class="subheading text-black">Aspiring Full Stack Web Developer</p>
+    <h1 class="text-black animate__animated animate__zoomIn">Hey, I'm Javier Goodall</h1>
+    <p class="subheading text-black animate__animated animate__zoomIn">Aspiring Full Stack Web Developer</p>
     <img class="spaceship img-fluid" src="https://i.postimg.cc/0yHgJZy3/startup.png" loading="lazy" alt="spaceship">
-    <img class="moon img-fluid" src="https://i.postimg.cc/PJYBwkRr/halfmoon.png" loading="lazy" alt="moon">
+    <img class="moon img-fluid animate__animated animate__fadeInUp" src="https://i.postimg.cc/PJYBwkRr/halfmoon.png" loading="lazy" alt="moon">
     <a href="#" class="link-arrow"><img src="https://i.postimg.cc/mkLJ7tnZ/up-arrow.png" loading="lazy"
       alt="scroll button" class="arrow">
     </a>
@@ -44,15 +44,15 @@ export default {
   h1 {
     font-size: 50px;
     font-family:'Cinzel', serif;
-    animation: fadeIn 5s; 
+    /* animation: fadeIn 5s;  */
 }
-.subheading {
+/* .subheading {
     animation: fadeIn 10s;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 3; }
-  }
+  } */
 .link-arrow {
     position: fixed;
     bottom: 0.5em;
@@ -105,8 +105,8 @@ export default {
 .spaceship {
     position: absolute;
     width: 90px;
-    height: 80px;
-    left: 300px;
+    height: 90px;
+    left: 200px;
     bottom: 300px;
 
     /* Hover */
