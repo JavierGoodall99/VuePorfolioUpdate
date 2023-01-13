@@ -14,6 +14,16 @@
           </div>
         </div>
       </div>
+      <div class="col-md-4" v-for="projectss in projectVue" :key="projectss.name">
+        <div class="card text-center w-75 m-auto mb-5">
+          <img :src="projectss.image" :alt="projectss" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">{{ projectss.title }}</h5>
+            <a :href="projectss.gitHub" target="_blank" class="p-1 m-auto">GitHub</a>
+            <a :href="projectss.firebase" target="_blank" class="p-1 m-auto">Firebase</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -42,12 +52,6 @@ export default {
           netlify: 'https://javiercalculator2netlify.app/'
         },
         {
-          title: 'Vue Portfolio',
-          image: 'https://i.postimg.cc/DzhQ7N49/astronaut-1.gif',
-          gitHub: 'https://github.com/JavierGoodall99/VuePortfolio',
-          netlify: ''
-        },
-        {
           title: 'Flip Card',
         image: 'https://i.postimg.cc/C53r96gn/moon.gif',
         gitHub: 'https://github.com/JavierGoodall99/Flip-Card.git',
@@ -60,6 +64,14 @@ export default {
         netlify: ''
       }
     ], 
+    projectVue: [
+        {
+          title: 'Vue Portfolio',
+          image: 'https://i.postimg.cc/DzhQ7N49/astronaut-1.gif',
+          gitHub: 'https://github.com/JavierGoodall99/VuePorfolioUpdate',
+          firebase: 'https://vueporfolio-2023.web.app/'
+        }
+      ]
     }
 }
 }
