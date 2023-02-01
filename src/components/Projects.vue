@@ -52,16 +52,16 @@ export default {
           netlify: 'https://javiercalculator2netlify.app/'
         },
         {
-          title: 'Flip Card',
-        image: 'https://i.postimg.cc/C53r96gn/moon.gif',
-        gitHub: 'https://github.com/JavierGoodall99/Flip-Card.git',
-        netlify: 'https://flipcard99.netlify.app/'
+          title: 'Debt Consulting',
+        image: 'https://i.postimg.cc/RZRP8FGg/credit.gif',
+        gitHub: 'https://github.com/JavierGoodall99/Debt-Project',
+        netlify: 'https://capitalcontrol.netlify.app/'
       },
       {
         title: 'Grid',
         image: 'https://i.postimg.cc/fbj2pL3Z/rocket-launch.gif',
         gitHub: 'https://github.com/JavierGoodall99/GRIDHome.git',
-        netlify: ''
+        netlify: 'https://gridpracticeproject.netlify.app/'
       }
     ], 
     projectVue: [

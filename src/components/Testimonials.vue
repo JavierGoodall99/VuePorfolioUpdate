@@ -1,4 +1,3 @@
-
 <template>
   <section id="testimonials">
     <h3 class="display-3 text-black mt-0 mb-0 text-decoration-underline">Testimonials</h3>
