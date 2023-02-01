@@ -7,8 +7,8 @@
     <p class="subheading text-black animate__animated animate__zoomIn">Aspiring Full Stack Web Developer</p>
     <img class="spaceship img-fluid" src="https://i.postimg.cc/0yHgJZy3/startup.png" loading="lazy" alt="spaceship">
     <img class="moon img-fluid animate__animated animate__fadeInUp" src="https://i.postimg.cc/PJYBwkRr/halfmoon.png" loading="lazy" alt="moon">
-    <a href="#" class="link-arrow"><img src="https://i.postimg.cc/mkLJ7tnZ/up-arrow.png" loading="lazy"
-      alt="scroll button" class="arrow">
+    <a href="#" class="link-arrow">
+      <img :style="{ display: arrowDisplay }" @click="scrollToTop" src="https://i.postimg.cc/mkLJ7tnZ/up-arrow.png" loading="lazy" alt="scroll button" class="arrow">
     </a>
   </div>
 </section>
@@ -37,6 +37,27 @@ export default {
     }
 }
 },
+  data() {
+    return {
+      arrowDisplay: 'none',
+    };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.checkIfShowArrow);
+  },
+  methods: {
+    checkIfShowArrow() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        this.arrowDisplay = 'block';
+      } else {
+        this.arrowDisplay = 'none';
+      }
+    },
+    scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
   
 }
 </script>
@@ -53,10 +74,12 @@ export default {
     0% { opacity: 0; }
     100% { opacity: 3; }
   } */
-.link-arrow {
-    position: fixed;
-    bottom: 0.5em;
-    right: 0.3em;
+  .arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
 }
 .arrow {
     width: 40px;

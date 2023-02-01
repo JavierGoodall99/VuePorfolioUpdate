@@ -25,6 +25,12 @@
              <li class="nav-item">
                <router-link :to="{path: '/', hash: '#contact'}">Contact</router-link>
              </li>
+
+             <!-- <li>
+               <i v-if="!isDarkMode" @click="toggleDarkMode" class="fas fa-moon"></i>
+               <i v-else @click="toggleDarkMode" class="fas fa-sun"></i>
+
+             </li> -->
            </ul>
          </div>
        </div>
@@ -34,9 +40,23 @@
 
 <script>
 
-export default {
-
-}
+// export default {
+//   data() {
+//     return {
+//       isDarkMode: false,
+//     };
+//   },
+//   methods: {
+//     toggleDarkMode() {
+//       this.isDarkMode = !this.isDarkMode;
+//       if (this.isDarkMode) {
+//         document.body.classList.add('dark-mode');
+//       } else {
+//         document.body.classList.remove('dark-mode');
+//       }
+//     }
+//   }
+// };
 
 </script>
 
@@ -89,5 +109,20 @@ h1 {
    width: 40px;
    background-color: white;
 }
+
+
+/* button for light and dark */
+
+/* .fa-moon {
+    font-size: 1.5em;
+    color: rgb(72, 70, 70);
+    cursor: pointer;
+  }
+  
+  .fa-sun {
+    font-size: 1.5em;
+    color: #ffffff;
+    cursor: pointer;
+  } */
    
 </style>
