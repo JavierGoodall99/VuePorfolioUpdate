@@ -16,7 +16,7 @@
 </div>
 
 <!-- Experience -->
-<div id="skills" class="container-fluid text-black">
+<div id="experience" class="container-fluid text-black">
   <h3 class="fw-bold">Experience</h3>
   <ul class="lh-lg me-4">
     <li v-for="job in experience" :key="job.id">

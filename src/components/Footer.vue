@@ -27,7 +27,7 @@ export default {
 
 
 .footer a:hover {
-    color: rgb(53, 177, 198);
+    color: rgb(255, 255, 255);
 }
 .footer {
     background-color: rgb(82, 97, 107);

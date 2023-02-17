@@ -108,8 +108,7 @@ input[type="submit"] {
   border: none;
   border-radius: 50px;
   color: rgb(0, 0, 0);
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
   padding: 20px 40px;
   transition: all 0.2s ease-in-out;
 }
