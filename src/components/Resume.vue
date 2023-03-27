@@ -1,94 +1,85 @@
-<template lang="">
-<!-- Resume -->
-<div id="resume" class="container-fluid text-black">
-  <h2 class="display-3 text-black mt-5 mb-5 text-decoration-underline">Resume</h2>
-  <h3 class="fw-bold">Education</h3>
-  <ul class="resume lh-lg me-4">
-    <li v-for="degree in education" :key="degree.id">
-      <p class="mb-4">{{ degree.startDate }} - {{ degree.endDate }}
-        <br>
-        {{ degree.degree }} - {{ degree.institution }}
-        <br>
-        {{ degree.description }}
-      </p>
-    </li>
-  </ul>
-</div>
-
-<!-- Experience -->
-<div id="experience" class="container-fluid text-black">
-  <h3 class="fw-bold">Experience</h3>
-  <ul class="lh-lg me-4">
-    <li v-for="job in experience" :key="job.id">
-      <p class="mb-4">{{ job.startDate }} - {{ job.endDate }}
-      <br>
-      {{ job.title }} - {{ job.company }}
-      </p>
-    </li>
-  </ul>
-</div>
+<template>
+  <section class="timelineArea">
+    <h3 class="display-3 text-black text-md-center mb-5 mt-3 text-decoration-underline">Resume</h3>
+    <div class="divisions">
+      <div v-for="(item, index) in items" :key="index" class="division">
+        <div class="bullet"></div>
+        <div data-aos="zoom-in" data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false">
+          <div class="date">{{ item.date }}</div>
+          <div class="content">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.place }}</p>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 <!-- Skills -->
 <div id="skills" class="container-fluid text-black">
   <h3 class="text-left fw-bold mt-3 mb-4">Skills</h3>
-  <div class="progressbar m-auto">
-    <div v-for="skill in skills" :key="skill.name">
-      <h3>{{ skill.name }} <i :class="'fa-brands ' + skill.icon"></i></h3>
-      <div class="progress my-3 w-75">
-        <div :class="'progress-bar bg-black'" role="progressbar" :style="{width: skill.percentage + '%'}">{{
+  <div data-aos="zoom-in" data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false" class="progressbar m-auto">
+    <div class="skills-wrapper">
+  <div v-for="skill in skills" :key="skill.name" class="skill">
+    <div class="icon-wrapper"><i :class="'fa-brands ' + skill.icon"></i></div>
+    <h3 class="name">{{ skill.name }}</h3>
+  </div>
+</div>
+      <!-- <div class="progress my-3 w-75"> -->
+        <!-- <div :class="'progress-bar bg-black'" role="progressbar" :style="{width: skill.percentage + '%'}">{{
           skill.percentage }}%
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
       </div>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
     data() {
     return {
-        education: [
+        items: [
         {
-            id: 1,
-            degree: 'Bachelor Pass Certificate',
-            institution: 'Plumstead High School',
-            startDate: 'January 2013',
-            endDate: 'December 2017',
-            description: ''
+          date: "January 2013 - December 2017",
+          title: "Plumstead High School",
+          // place: "Learner ",
+          description: "Bachelor Pass Certificate",
         },
         {
-            id: 2,
-            degree: 'Bachelor of Arts',
-            institution: 'University of Cape Town',
-            startDate: 'February 2019',
-            endDate: 'October 2022',
-            description: 'Majored in Religious Studies, Industrial Psychology & Film Studies'
+          date: "February 2019 - October 2022",
+          title: "University of Cape Town",
+          // place: "Student",
+          description: "Bachelor of Arts - Majored in Religious Studies, Industrial Psychology & Film Studies",
         },
         {
-            id: 3,
-            degree: 'Web Development Certificate',
-            institution: 'Life Choices Academy',
-            startDate: 'September 2022',
-            endDate: 'Present',
-            description: '',
-        }
-        ],
-
-        // Experience
-      experience: [
-        {
-          startDate: 'February 2019',
-          endDate: 'February 2020',
-          title: 'Volunteer',
-          company: 'Students Health and Welfare Centre Organization (SHAWCO)',
+          date: "February 2019 - February 2020",
+          title: "Students Health and Welfare Centre Organization",
+          place: "Volunteer",
+          description: "I helped primary school learners who needed help with their work",
         },
         {
-          startDate: 'January 2021',
-          endDate: 'Present',
-          title: 'Film and Television Extra',
-          company: '39 Steps',
+          date: "January 2021 - Present",
+          title: "39 Steps",
+          place: "Film and Television Extra ",
+          description:"Performed as a background performer in various productions, providing a realistic atmosphere and filling out scenes as required.",
+        },
+        {
+          date: "September 2022 - Present",
+          title: "Life Choices Coding Academy ",
+          place: "Web Developer Intern",
+          description: "Full Stack Web Development Certificate",
         },
       ],
 
@@ -96,28 +87,33 @@ export default {
       skills: [
       {
           name: 'HTML',
-          percentage: 85,
-          icon: 'fa-html5'
+          // percentage: 85,
+          icon: 'fa-html5 fa-5x'
         },
         {
           name: 'CSS',
-          percentage: 70,
-          icon: 'fa-css3-alt'
+          // percentage: 70,
+          icon: 'fa-css3-alt fa-5x'
         },
         {
           name: 'Bootstrap',
-          percentage: 75,
-          icon: 'fa-bootstrap'
+          // percentage: 75,
+          icon: 'fa-bootstrap fa-5x'
         },
         {
           name: 'Javascript',
-          percentage: 60,
-          icon: 'fa-js'
+          // percentage: 60,
+          icon: 'fa-js fa-5x'
         },
         {
           name: 'Vue.js',
-          percentage: 70,
-          icon: 'fa-brands fa-vuejs'
+          // percentage: 70,
+          icon: 'fa-brands fa-vuejs fa-5x'
+        },
+        {
+          name: 'Node.JS',
+          // percentage: 70,
+          icon: 'fa-brands fa-node-js fa-5x'
         }
     ]
     }
@@ -126,6 +122,115 @@ export default {
 </script>
 
 <style scoped>
+
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-wrapper {
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.name {
+  text-align: center;
+}
+
+/* Timeline */
+
+.timelineArea{
+	padding: 100px 15px;
+}
+.divisions{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.divisions::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.division{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.division:last-child{
+	margin-bottom: 0;
+}
+.division:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.division:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.bullet{
+	height: 16px;
+	width: 16px;
+	background-color: #000000;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.date{
+	font-size: 18px;
+	color: #000000;
+	margin:6px 0 15px;
+}
+.content{
+    background-color: black;
+	padding: 30px;
+	border-radius: 5px;
+}
+.content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	/* text-transform: capitalize; */
+	/* font-weight: 500; */
+}
+.content p{
+    color: #ffffff;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.divisions::before{
+		left: 7px;
+	}
+	.division:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.division:nth-child(odd),
+	.division:nth-child(even){
+		padding-left: 37px;
+	}
+	.bullet{
+		left:0;
+	}
+}
+
+
+
     /* SKILLS */
 ul {
     list-style-type: none;

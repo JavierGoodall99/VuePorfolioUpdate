@@ -1,5 +1,5 @@
 <template>
-      <section id="projects" class="container-fluid">
+  <section id="projects" class="container-fluid">
     <div class="container">
       <h3 class="display-3 text-black mt-5 mb-5 text-decoration-underline">Projects</h3>
     </div>
@@ -30,9 +30,9 @@
 
 <script>
 export default {
-    data() {
+  data() {
     return {
-    projects: [
+      projects: [
         {
           title: 'Bootstrap Portfolio',
           image: 'https://i.postimg.cc/NjJGvgWh/astronaut.gif',
@@ -53,58 +53,63 @@ export default {
         },
         {
           title: 'Debt Consulting',
-        image: 'https://i.postimg.cc/RZRP8FGg/credit.gif',
-        gitHub: 'https://github.com/JavierGoodall99/Debt-Project',
-        netlify: 'https://capitalcontrol.netlify.app/'
-      },
-      {
-        title: 'Grid',
-        image: 'https://i.postimg.cc/fbj2pL3Z/rocket-launch.gif',
-        gitHub: 'https://github.com/JavierGoodall99/GRIDHome.git',
-        netlify: 'https://gridpracticeproject.netlify.app/'
-      }
-    ], 
-    projectVue: [
+          image: 'https://i.postimg.cc/RZRP8FGg/credit.gif',
+          gitHub: 'https://github.com/JavierGoodall99/Debt-Project',
+          netlify: 'https://capitalcontrol.netlify.app/'
+        }
+      ],
+      projectVue: [
         {
           title: 'Vue Portfolio',
           image: 'https://i.postimg.cc/DzhQ7N49/astronaut-1.gif',
           gitHub: 'https://github.com/JavierGoodall99/VuePorfolioUpdate',
           firebase: 'https://vueporfolio-2023.web.app/'
+        },
+        {
+          title: 'Flight Booking',
+          image: 'https://i.postimg.cc/Cx1jV2BW/travel.gif',
+          gitHub: 'https://github.com/JavierGoodall99/VolunteerVentures',
+          firebase: 'https://volunteerventures2023.web.app/'
         }
       ]
     }
-}
+  }
 }
 </script>
 
 <style scoped>
-  .title {
-    text-align: center;
-    padding: 25px 0;
-  }
-  title p {
-    font-size: 18px;
-  }
-  .card-body {
-    box-shadow: 0 0 20px 7px black;
-  }
-  .card {
-    margin: 20px 10px;
-  } 
-  .card-body {
-    color: black;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  .card-body a {
-    color: rgb(36, 147, 166);
-  }
-  .card-body a:hover {
-    color: black;
-    text-decoration: none;
-  }
-  img {
-    object-fit: cover;
-  }
+.title {
+  text-align: center;
+  padding: 25px 0;
+}
 
-</style>
+title p {
+  font-size: 18px;
+}
+
+.card-body {
+  box-shadow: 0 0 20px 7px black;
+}
+
+.card {
+  margin: 20px 10px;
+}
+
+.card-body {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-body a {
+  color: rgb(36, 147, 166);
+}
+
+.card-body a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+}</style>

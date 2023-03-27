@@ -2,11 +2,22 @@
 <section id="about">
   <div class="container-fluid row">
     <h3 class="display-3 text-black text-md-center mb-5 mt-3 text-decoration-underline">About</h3>
-    <div class="about col-md-6">
+    <div data-aos="zoom-in" data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false" class="about col-md-6">
       <img class="profile1 my-3 img-fluid mx-4 w-75 float-md-end" src="https://i.postimg.cc/7ZBQDZDk/Profile
       Me.jpg" alt="Javier Profile">
     </div>
-    <div class="col-md-6 text-md-start lh-lg mt-5 text-black">
+    <div data-aos="zoom-in" data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+     class="col-md-6 text-md-start lh-lg mt-5 text-black">
       <p class="paragraph">I'm currently enrolled at Life Choices Academy, where I'm learning technical and soft
         skills to become a full stack developer. Coding has changed my life because it has provided me with
         problem-solving skills and a way to communicate with others on a technical level. Furthermore, I enjoy
