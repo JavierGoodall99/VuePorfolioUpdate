@@ -3,7 +3,12 @@
     <div class="container">
       <h3 class="display-3 text-black mt-5 mb-5 text-decoration-underline">Projects</h3>
     </div>
-    <div class="row px-5">
+    <div data-aos="zoom-in" data-aos-offset="200"
+    data-aos-delay="70"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false" class="row px-5">
       <div class="col-md-4" v-for="project in projects" :key="project.name">
         <div class="card text-center w-75 m-auto mb-5">
           <img :src="project.image" :alt="project" loading="lazy">

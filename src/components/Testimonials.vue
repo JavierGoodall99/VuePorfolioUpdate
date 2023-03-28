@@ -1,21 +1,26 @@
 <template>
   <section id="testimonials">
     <h3 class="display-3 text-black mt-0 mb-0 text-decoration-underline">Testimonials</h3>
-    <div class="container-fluid" id="carousel">
+    <div class="container-fluid w-100 my-5" data-aos="zoom-in" data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false" id="carousel">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000" v-for="testimonial in testimonialsActiveCarousel"
             :key="testimonial.id">
-            <p class="my-5"> {{ testimonial.content }}</p>
             <img :src="testimonial.image" class="img-fluid m-auto" alt="testimony" loading="lazy">
-            <h5 class="mt-3 text-black"> {{ testimonial.name }}</h5>
-            <h6 class="text-black">{{ testimonial.position }}</h6>
+            <p class="my-2"> {{ testimonial.content }}</p>
+            <h5 class="mt-3 text-black fw-bold"> {{ testimonial.name }}</h5>
+            <h6 class="text-black fw-bold">{{ testimonial.position }}</h6>
           </div>
           <div class="carousel-item" data-bs-interval="10000" v-for="testimonial in testimonials" :key="testimonial.id">
-            <p class="my-5">{{ testimonial.content }}</p>
             <img :src="testimonial.image" class="img-fluid m-auto" alt="testimony" loading="lazy">
-            <h5 class="mt-3 text-black">{{ testimonial.name }}</h5>
-            <h6 class="text-black">{{ testimonial.position }}</h6>
+            <p class="my-3">{{ testimonial.content }}</p>
+            <h5 class="mt-3 text-black fw-bold">{{ testimonial.name }}</h5>
+            <h6 class="text-black fw-bold">{{ testimonial.position }}</h6>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -76,6 +81,7 @@ export default {
                   position: "Web Developer"
                 },
                 {
+                  id: 6,
                   content: "Javier is a great colleague who is very focused & understanding.  He is always willing to help his team mates when needed, and is good at holding meaningful conversations. He is wise beyond his age as he is good at sharing his knowledge to his peers once you know him better.",
                   image: "https://i.postimg.cc/jdMQXKvj/DSC-3592.jpg",
                   name: "Athenkosi Freddie",
@@ -89,25 +95,36 @@ export default {
 
 
 <style scoped>
-
+section{
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+.container-fluid{
+  /* border-radius: 50px; */
+  /* background-color: rgba(82, 97, 107, 0.651); */
+}
 
 .testimonial-area {
 	padding: 40px 0;
 }
 p {
 	color: black;
-	width: 60%;
+	width: 50%;
+  font-size: 20px;
 	margin: auto;
 }
 span {
     color:  rgb(201, 214, 223);
 }
 .img-fluid {
-    width: 300px;
-	height: 290px;
+    width: 200px;
+	height: 190px;
 	margin-top: 50px;
-    box-shadow: 0 0 20px 7px black;
+  border-radius: 50%;
+    /* box-shadow: 0 0 20px 7px black; */
 }
+
+
 .carousel-indicators {
 	bottom: -80px;
 }

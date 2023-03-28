@@ -87,7 +87,7 @@ export default {
 }
 /* Containers */
 .top-container {
-    background-color: rgb(82, 97, 107);
+    background-color: rgba(82, 97, 107, 0.651);
     position: relative;
     padding-top: 230px;
 }
