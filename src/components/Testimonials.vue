@@ -1,12 +1,7 @@
 <template>
   <section id="testimonials">
     <h3 class="display-3 text-black mt-0 mb-0 text-decoration-underline">Testimonials</h3>
-    <div class="container-fluid w-100 my-5" data-aos="zoom-in" data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false" id="carousel">
+    <div class="container-fluid w-100 my-5" id="carousel">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000" v-for="testimonial in testimonialsActiveCarousel"

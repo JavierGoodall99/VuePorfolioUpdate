@@ -106,7 +106,7 @@ export default {
         {
           name: 'MySQL',
           // percentage: 70, <i class="fa-solid fa-database"></i>
-          icon: 'fa-solid fa-database fa-5x'
+          icon: 'fa-database fa-5x !important'
         }
       ]
     }
