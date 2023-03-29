@@ -1,5 +1,5 @@
 <template>
-  <section class="timelineArea">
+  <section class="timelineArea" id="resume">
     <h3 class="display-3 text-black text-md-center mb-5 mt-3 text-decoration-underline">Resume</h3>
     <div class="divisions">
       <div v-for="(item, index) in items" :key="index" class="division">
