@@ -2,22 +2,11 @@
 <section id="about">
   <div class="container-fluid row">
     <h3 class="display-3 text-black text-md-center mb-5 mt-3 text-decoration-underline">About</h3>
-    <div data-aos="zoom-in" data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false" class="about col-md-6">
+    <div class="about col-md-6">
       <img class="profile1 my-3 img-fluid w-75 mx-4 float-md-end" src="https://i.postimg.cc/7ZBQDZDk/Profile
       Me.jpg" alt="Javier Profile">
     </div>
-    <div data-aos="zoom-in" data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-     class="col-md-6 fs-5 text-md-start lh-lg mt-3 text-black">
+    <div class="col-md-6 fs-5 text-md-start lh-lg mt-3 text-black">
       <p>
         <b>Date Birth:</b> 02 February 1999<br>
         <b>Address:</b> Ottery, Cape Town, South Africa<br>

@@ -21,8 +21,7 @@
   <!-- Skills -->
   <div id="skills" class="container-fluid text-black">
     <h3 class="text-left fw-bold mt-3 mb-4">Skills</h3>
-    <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="70" data-aos-duration="1000"
-      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" class="progressbar m-auto">
+    <div class="progressbar m-auto">
       <div class="skills-wrapper d-flex flex-wrap justify-content-center">
         <div v-for="skill in skills" :key="skill.name" class="skill col-6 col-md-3 mb-3">
           <div class="icon-wrapper text-center mb-2"><i :class="['fas', 'fab', skill.icon]"></i></div>
