@@ -49,8 +49,7 @@ export default {
         {
           date: "February 2019 - October 2022",
           title: "University of Cape Town",
-          // place: "Student",
-          description: "Bachelor of Arts - Majored in Religious Studies, Industrial Psychology & Film Studies",
+          description: "Bachelor of Social Science - Majored in Religious Studies, Industrial Psychology & Film Studies",
         },
         {
           date: "February 2019 - February 2020",
