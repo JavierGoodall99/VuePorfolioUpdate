@@ -52,10 +52,10 @@ export default {
           netlify: 'https://javiercalculator2netlify.app/'
         },
         {
-          title: 'Debt Consulting',
-          image: 'https://i.postimg.cc/RZRP8FGg/credit.gif',
-          gitHub: 'https://github.com/JavierGoodall99/Debt-Project',
-          netlify: 'https://capitalcontrol.netlify.app/'
+          title: 'To-do List',
+          image: 'https://i.postimg.cc/448zK0sh/checklist.gif',
+          gitHub: 'https://github.com/JavierGoodall99/Todo-List',
+          netlify: 'https://colorfultodolist.netlify.app/'
         }
       ],
       projectVue: [

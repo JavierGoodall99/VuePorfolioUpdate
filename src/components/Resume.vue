@@ -1,21 +1,23 @@
 <template>
-  <section class="timelineArea" id="resume">
-    <h3 class="display-3 text-black text-md-center mb-5 mt-3 text-decoration-underline">Resume</h3>
-    <div class="divisions">
-      <div v-for="(item, index) in items" :key="index" class="division">
-        <div class="bullet"></div>
-        <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
-          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
-          <div class="date">{{ item.date }}</div>
-          <div class="content">
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.place }}</p>
-            <p>{{ item.description }}</p>
+  <div id="resume">
+    <section class="timelineArea">
+      <h3 class="display-3 text-black text-md-center mb-5 mt-3 text-decoration-underline">Resume</h3>
+      <div class="divisions">
+        <div v-for="(item, index) in items" :key="index" class="division">
+          <div class="bullet"></div>
+          <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+            <div class="date">{{ item.date }}</div>
+            <div class="content">
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.place }}</p>
+              <p>{{ item.description }}</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
     </div>
-  </section>
 
 
   <!-- Skills -->

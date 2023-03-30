@@ -8,7 +8,7 @@
           </div> -->
           <div class="col-md-6">
             <h4><i class="fa-solid fa-phone" style="color: black;"></i>Contact Me</h4>
-            <p>Email: javiergoodall@outlook.com <br> Phone: 084 290-9844</p>
+            <p>Email: javiergoodall@outlook.com <br> Phone: 084-290-9844</p>
           </div>
           <div class="col-md-6">
             <h4>Follow Me</h4>
