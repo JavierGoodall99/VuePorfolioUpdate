@@ -116,6 +116,7 @@ span {
 	height: 190px;
 	margin-top: 50px;
   border-radius: 50%;
+  object-fit: cover;
     /* box-shadow: 0 0 20px 7px black; */
 }
 

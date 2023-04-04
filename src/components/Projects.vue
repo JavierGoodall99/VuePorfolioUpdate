@@ -49,13 +49,31 @@ export default {
           title: 'Calculator',
           image: 'https://i.postimg.cc/66gdyFx7/calculator.gif',
           gitHub: 'https://github.com/JavierGoodall99/CalculatorNew.git',
-          netlify: 'https://javiercalculator2netlify.app/'
+          netlify: 'https://javiercalculator2.netlify.app/'
         },
         {
           title: 'To-do List',
           image: 'https://i.postimg.cc/448zK0sh/checklist.gif',
           gitHub: 'https://github.com/JavierGoodall99/Todo-List',
           netlify: 'https://colorfultodolist.netlify.app/'
+        },
+        {
+          title: 'Tic Tac Toe',
+          image: 'https://i.postimg.cc/jSTQrQcb/letter-x.gif',
+          gitHub: 'https://github.com/JavierGoodall99/Tic-Tac-Toe.git',
+          netlify: 'https://tictactoxoxo.netlify.app/'
+        },
+        {
+          title: 'BMI Calculator',
+          image: 'https://i.postimg.cc/m2m2bTNg/scale.gif',
+          gitHub: 'https://github.com/JavierGoodall99/BMI-Calculator',
+          netlify: 'https://bmicalculator2023.netlify.app/'
+        },
+        {
+          title: 'Budget Calculator',
+          image: 'https://i.postimg.cc/XJtd1wqt/devaluation.gif',
+          gitHub: 'https://github.com/JavierGoodall99/Budget-Calculator',
+          netlify: 'https://budgetcalculator2023.netlify.app/'
         }
       ],
       projectVue: [
